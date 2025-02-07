@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1671128746 source:c:\users\piotr\desktop\programowanie\c++\k-neighbours\main.cpp
+	<iostream>
+	<math.h>
+

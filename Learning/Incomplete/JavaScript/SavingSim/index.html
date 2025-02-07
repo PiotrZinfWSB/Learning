@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="width=device-width, initial-scale=1.0">
+        <title>Symulator oszczędnościowy</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <span><h2>Kalkulator produktów oszczędnościowych</h2></span>
+        </header>
+        <aside>
+            <form>
+                <ul>
+                    <li><label for="productType">Rodzaj produktu: </label>
+                        <select id="productType">
+                        <option value="savAcc">Konto oszczędnościowe</option>
+                        <option value="deposit">Lokata</option>
+                        <option value="bonds">Obligacje</option>
+                    </select></li>
+                    <li><label for="productName">Nazwa: </label><input type="text" id="productName"></li>
+                    <li><label for="interest">Oprocentowanie: </label><input type="number" id="interest"></li>
+                    <li><label for="asset">Kapitał początkowy: </label><input type="number" id="asset"></li>
+                    <li><label for="start">Rozpoczęcie: </label><input type="date" id="start"></li>
+                    <li><label for="time">Czas trwania: </label><input type="number" id="time"><select id="timeSelect"><option value="years">Lata</option><option value="months">Miesiące</option></select></li>
+                    <li><label for="extra">Wpłaty regularne </label><input type="checkbox" id="extra"></li>
+                    <li id="choiceExtra" style="display: none;"><label for="monthAdd">Kwota: </label><input type="number" id="monthAdd"></li>
+                </ul>
+                <button type="button" id="run">Oblicz</button>
+            </form>
+        </aside>
+        <div id="chart"></div>
+        <div id="tab">
+            <table id="results">
+                <th>Outputs</th>
+                <tr><td>Name</td><td>Type</td><td>interest</td><td>Asset</td><td>Start</td><td>Time [m]</td><td>timeSelect</td></tr>
+            </table>
+        </div>
+    </body>
+    <script src="system.js"></script>
+</html>

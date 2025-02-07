@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="http0equiv" content="width=device-width, initial-scale=1.0">
+    <title>Komory</title>
+    <style>
+        body{
+            background-color: rgb(124, 65, 45);
+        }
+        header{
+            width: auto;
+            height: auto;
+            background-color: rgb(29, 140, 148);
+        }
+        #inputs{
+            width: 150px;
+            display:flex;
+            flex-direction: column;
+            background-color: cadetblue;
+        }
+        .chamber{
+            width: 1000px;
+            height: 300px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: cadetblue;
+        }
+        #pageContent{
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Komory Starzeniowe</h1>
+    </header>
+    <div id="pageContent">
+        <aside id="leftPanel">
+            <form id="inputs">
+                <h3>Nowe badanie</h3>
+                <label for="sampleNme">Nazwa próbki/serii: </label>
+                <input id="sampleNme" type="text">
+                <label for="start">Początek badania: </label>
+                <input id="start" type="datetime-local">
+                <label for="hNum">Liczba godzin: </label>
+                <input id="hNum" type="number">
+                <button type="reset">Wyczyść</button>
+                <button id="run" type="button">Oblicz</button> 
+            </form>
+        </aside>
+        <div id="chambers">
+            <div class="chamber" id="qSun">
+                <h3>Q-Sun</h3>
+    
+            </div>
+        </div>
+    </div>
+</body>
+<script src="systemwithPlotly.js"></script>
+</html>

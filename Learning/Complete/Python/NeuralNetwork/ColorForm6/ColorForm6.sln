@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ColorForm6", "ColorForm6.pyproj", "{DA510D1F-3976-43D7-9F81-ADEDBB0D58EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA510D1F-3976-43D7-9F81-ADEDBB0D58EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA510D1F-3976-43D7-9F81-ADEDBB0D58EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB3ABEB2-BFA4-4B49-8C37-1B2A2E3E68FF}
+	EndGlobalSection
+EndGlobal

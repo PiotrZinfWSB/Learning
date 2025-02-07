@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeChart</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>Testing time options on chart</header>
+    <div id="content">
+        <aside>
+            <form>
+                <label for="id">Sample/series ID: </label><br>
+                <input type="text" id="id"><br>
+                <label for="duration">Number of hours: </label><br>
+                <input type="number" id="duration"><br>
+                <label for="begin">Start date/time: </label><br>
+                <input type="datetime-local" id="begin">
+                <div id="buttons">
+                    <button type="reset">Clear all</button>
+                    <button type="button" id="run">Run</button>
+                </div>
+            </form>
+        </aside>
+        <div id="plot"></div>
+    </div>
+</body>
+<script src="system.js"></script>
+</html>

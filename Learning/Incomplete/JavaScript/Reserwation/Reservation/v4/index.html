@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Komory starzeniowe</title>
+    <style>
+        .form-label{
+            margin-top: 10px;
+        }
+        table{
+            border-style: solid;
+            border-width: 1px;
+            color: aliceblue;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!--- HEADER -->
+    <div class="navbar bg-primary-subtle">
+        <a class="navbar-brand"><h1>Badania starzeniowe</h1></a>
+    </div>
+
+    <div class="row align-items-start">
+        <div class="col-2">
+            <div class="row">
+                <!--SIDEBAR WITH FORM-->
+                <div class="card bg-primary-subtle m-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nowe badanie</h5>
+                        <form class="bg-primary-subtle">
+                            <label for="chamber" class="form-label"><h6>Wybór komory:</h6></label>
+                            <select class="form-select" size="3" id="chamber">
+                                <option value="Q-Sun">Q-Sun</option>
+                                <option value="Q-UV (1)">Q-UV (1)</option>
+                                <option value="Q-UV (2)">Q-UV (2)</option>
+                                <option value="Solna">Solna</option>
+                            </select>
+                            <label for="user" class="form-label"><h6>Użytkownik</h6></label>
+                            <input id="user" class="form-control" type="text">
+                            <label for="sampleId" class="form-label"><h6>ID próbki / nazwa serii</h6></label>
+                            <input id="sampleId" class="form-control" type="text">
+                            <label for="hNum" class="form-label"><h6>Liczba godzin</h6></label>
+                            <input type="number" id="hNum" class="form-control">
+                            <label for="begin" class="form-label"><h6>Początek badania</h6></label>
+                            <input type="datetime-local" class="form-control" id="begin">
+                            <button type="reset" class="btn btn-info" style="margin-top: 10px;">Reset</button>
+                            <button id="accept" type="button" class="btn btn-info" style="margin-top: 10px;">Akceptuj</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <!--Q-SUN CHAMBER-->
+                <div class="card bg-primary m-2">
+                    <div class="card-body">
+                        <h3 class="card-title text-light">Q-SUN</h3>
+                        <div class="container" id="qSunInfo">
+                            <table>
+                                <tr>
+                                    <td>Aktualny czas testu</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>Lampa</td>
+                                    <td>316-A</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="container mp-3" id="qSunContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="system.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Komory starzeniowe</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header><h1>Badania starzeniowe w komorach</h1></header>
+        <aside id="inputField">
+            <form>
+                <div class="input-form">
+                    <label for="id">Nazwa próbki/serii:</label>
+                    <input id="id" type="text">
+                </div>
+                <div class="input-form">
+                    <label for="itemsNo">Liczba elementów:</label>
+                    <input id="itemsNo" type="number">
+                </div>
+                <div class="input-form">
+                    <label for="start">Czas rozpoczęcia:</label>
+                    <input id="start" type="datetime-local">
+                </div>
+                <div class="input-form">
+                    <label for="time">Czas trwania:</label>
+                    <input id="time" type="number">
+                </div>
+                <div id="inputButtons">
+                    <button id="reset" type="reset">Wyczyść</button>
+                    <button id="run" type="button">Akceptuj</button>
+                </div>
+            </form>
+        </aside>
+        <div id="screen"></div>
+    </body>
+</html>

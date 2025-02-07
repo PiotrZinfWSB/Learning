@@ -1,0 +1,38 @@
+#window{
+    width:80%;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 10%;
+    border-style:ridge;
+    border-width: 5px;
+    border-color: darkslategrey;
+    background-color: darkgrey;
+    position: relative;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+.day{
+    width: 240px;
+    height: 100%;
+    background-color: grey;
+    border: 1px solid darkolivegreen;
+}
+
+.workDay{
+    width: 80px;
+    height: 100%;
+    margin-left: 80px;
+    background-color: rgb(120, 120, 120);
+    
+}
+
+#now{
+    width: 0px;
+    height: 95%;
+    border: 1px, dashed, red;
+    left: 50%;
+    position: absolute;
+    z-index: 3;
+}

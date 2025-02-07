@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liczba dni</title>
+</head>
+<body>
+    <header>Obliczanie liczby dni</header>
+    <aside id="inputContainer">
+        <form id="inputForm">
+            <div class="inputBox">
+                <label for="start">Start: </label>
+                <input id="start" type="date"><br>
+                <label for="startVal">Wartość początkowa: </label>
+                <input id="startVal" type="number">
+            </div>
+            <div class="inputBox">
+                <label for="end">Koniec: </label>
+                <input id="end" type="date"><br>
+                <label for="endVal">Wartość końcowa: </label>
+                <input id="endVal" type="number">
+            </div>
+            <div class="inputBox">
+                <button type="reset">Wyczyść</button>
+                <button type="button" id="run">Oblicz</button>
+            </div>
+        </form>
+    </aside>
+    <div id="results">
+
+    </div>
+</body>
+<script src="system.js"></script>
+<style>
+    #inputContainer{
+        width: 30%;
+    }
+    #inputForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputBox{
+        text-align: left;
+    }
+</style>
+</html>

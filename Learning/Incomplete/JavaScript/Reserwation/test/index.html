@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Badania</title>
+        <link rel="stylesheet" href="chambers.css" type="text/css">
+    </head>
+    <body>
+        <header>Miejsce na header i jakiś tytuł</header>
+        <aside>
+            <form id="dataInput">
+                <p>Wybór komory</p>
+                <ul style="list-style-type:none;">
+                    <li><input id="qSun" type="radio"><label for="qSun">Q-Sun</label></li>
+                    <li><input id="uv1" type="radio"><label for="uv1">Komora UV I</label></li>
+                    <li><input id="uv2" type="radio"><label for="uv2">Komora UV II</label></li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li><label for="user">Użytkownik:</label><input id="user" type="text"></li>
+                    <li><label for="samppleName">Nazwa próbki/serii</label><input id="samppleName" type="text"></li>
+                    <li><label for="pieces">Liczba paneli</label><input id="pieces" type="number" min="1" max="48"></li>
+                    <li> <label for="start">Początek badania</label><input id="start" type="datetime-local"></li>
+                    <li><label for="numHours">Liczba godzin</label><input id="numHours" type="number"></li>
+                </ul>
+                <button id="reset" type="reset">Wyczyść</button>
+                <button id="apply" type="button">Utwórz</button>
+            </form>
+        </aside>
+        <div id="devicesContainer">
+            
+        </div>
+    </body>
+    <script src="system.js"></script>
+</html>

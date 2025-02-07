@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(92, 92, 138);
+    color: rgb(150, 170, 187);
+}
+
+header{
+    text-align: center;
+    font-size: x-large;
+}
+
+aside{
+    width: 20%;
+    height: 500px;
+    border-width: medium;
+    border-style: ridge;
+    border-color: darkblue;
+    display:list-item;
+    flex-direction: column;
+}
+input{
+    background-color: rgb(117, 117, 155);
+}

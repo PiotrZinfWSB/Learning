@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>LOOP TEST</title>
+    </head>
+    <body>
+        <div>
+            <input type="number" id="num">
+            <button type="button" id="run">Run</button>
+        </div>
+        <div id="out">
+        </div>
+    </body>
+    <script>
+        function createArr(num){
+            const arr = [];
+            for(i=0;i<num;i++){
+                arr.push(i+1);
+            }
+            return arr
+        }
+
+        document.getElementById('run').addEventListener('click', function(){
+            const arr = createArr(parseInt(document.getElementById('num').value));
+            const tableNode = document.createElement('table');
+            tableNode.style.border = "1px, solid, black";
+            tableNode.style.marginTop = "20px";
+            const headerNodeLeft = document.createElement('th');
+            headerNodeLeft.style.border = '1px, solid, darkgrey';
+            headerNodeLeft.innerText = "Array index";
+            const headerNodeRight = document.createElement('th');
+            headerNodeRight.style.border = '1px, solid, darkgrey';
+            headerNodeRight.innerText = "Array value";
+            tableNode.appendChild(headerNodeLeft);
+            tableNode.appendChild(headerNodeRight);
+            document.getElementById('out').appendChild(tableNode);
+
+            for(let i=0; i<arr.length; i++){
+                const cellNodeLeft = document.createElement('td');
+                const cellNodeRight = document.createElement('td');
+                cellNodeLeft.style.border = '1px, dashed, green';
+                cellNodeRight.style.border = '1px, dashed, green';
+                cellNodeLeft.innerHTML = i;
+                cellNodeRight.innerHTML = arr[i];
+                const rowNode = document.createElement('tr');
+                rowNode.style.border="1px, dashed, grey";
+                rowNode.appendChild(cellNodeLeft);
+                rowNode.appendChild(cellNodeRight);
+                tableNode.appendChild(rowNode);  
+            }
+        })
+    </script>
+</html>

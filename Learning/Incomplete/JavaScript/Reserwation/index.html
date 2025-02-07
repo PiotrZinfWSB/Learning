@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="http-equiv" content="width=device-width, initial-scale=1.0">
+    <title>Komory starzeniowe</title>
+</head>
+<body>
+    <header style="width: max-content; height: fit-content; border: 1px,solid, black; background-color: cadetblue; text-align: center; margin: 10px">
+        <h2>Komory Starzeniowe</h2>
+    </header>
+    <aside style="margin: 10px; width: min-content; height: min-content; border: 1px, solid, black; background-color: cadetblue;">
+        <form>
+            <label for="sampleName">Nazwa próbki/serii: </label>
+            <input id="sampleName" type="text">
+            <label for="begin">Czas rozpoczęcia: </label>
+            <input id="begin" type="datetime-local">
+            <label for="duration">Ilość godzin</label>
+            <input id="duration" type="number">
+            <button type="reset">Wyczyść</button>
+            <button id="run" type="button">Akceptuj</button>
+        </form>
+    </aside>
+    <div id="chambers" style="float: left; width: 500px; height: 500px; background-color: cadetblue;">
+        <section class="chamber" id="qSun">
+        </section>
+    </div>
+</body>
+<script src="system.js"></script>
+</html>
